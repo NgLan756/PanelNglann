@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TheNhanDev</title>
+  <title>Panel NguyenLan</title>
   <style>
     body {
-      background-color: #111;
+      background-color: #00008b;
       font-family: 'Arial', sans-serif;
       color: white;
       display: flex;
@@ -14,7 +14,7 @@
       height: 100vh;
     }
     .container {
-      background-color: #000;
+      background-color: #00008b;
       border-radius: 12px;
       padding: 20px 30px;
       box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
@@ -23,7 +23,7 @@
     }
     .title {
       text-align: center;
-      color: #00ffcc;
+      color: #f5f5f5;
       font-size: 22px;
       font-weight: bold;
       margin-bottom: 20px;
@@ -31,98 +31,16 @@
     .option {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-      font-weight: bold;
-      color: yellow;
-    }
-    .btn-group {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 20px;
-    }
-    .btn {
-      background-color: red;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      padding: 10px 20px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.2s;
-    }
-    .btn:hover {
-      background-color: darkred;
-    }
-
-    /* Toast notification */
-    .toast {
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #222;
-      color: #00ffcc;
-      padding: 10px 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #00ffcc;
-      opacity: 0;
-      transition: opacity 0.5s ease;
-      pointer-events: none;
-    }
-
-    .toast.show {
-      opacity: 1;
-    }
-    input[type="checkbox"] {
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #00ffcc;
-  border-radius: 4px;
-  background-color: transparent;
-  cursor: pointer;
-  position: relative;
-  transition: 0.2s ease;
-}
-
-input[type="checkbox"]:checked {
-  background-color: #00ffcc;
-  border-color: #00ffcc;
-}
-
-input[type="checkbox"]::after {
-  content: '☯️';
-  position: absolute;
-  top: 3px;
-  left: 6px;
-  width: 5px;
-  height: 10px;
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  opacity: 0;
-  transform: rotate(45deg);
-  transition: opacity 0.2s;
-}
-
-input[type="checkbox"]:checked::after {
-  opacity: 1;
-}
-
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="title">DPI Tool TIẾN BỜ RAI</div>
-    <div class="option"><span>INCREASE DPI</span><input type="checkbox"></div>
-    <div class="option"><span>SHARPEN DISPLAY</span><input type="checkbox"></div>
-    <div class="option"><span>ENHANCE BRIGHTNESS</span><input type="checkbox"></div>
-    <div class="option"><span>ANTI-LAG MODE</span><input type="checkbox"></div>
-    <div class="option"><span>BUFF TOUCH INPUT</span><input type="checkbox"></div>
-    <div class="option"><span>OPTIMIZE FPS</span><input type="checkbox"></div>
+NLAN</div>
+    <div class="option"><span>NO RECOIL 90%</span><input type="checkbox"></div>
+    <div class="option"><span>SENSI PRO</span></span><input type="checkbox"></div>
+    <div class="option"><span>AIMLOCK PRO</span><input type="checkbox"></div>
+    <div class="option"><span>REGLOCK PRO</span><input type="checkbox"></div>
+    <div class="option"><span>AIMBOT PRO</span><input type="checkbox"></div>
+    <div class="option"><span>OPTIMIZE PRO</span><input type="checkbox"></div>
     <div class="btn-group">
-      <button class="btn" onclick="applySettings('max')">BUFF MAX</button>
-      <button class="btn" onclick="applySettings('smooth')">BUFF SMOOTH</button>
+      <button class="btn" onclick="applySettings('AIMLOCK')">ON AIMLOCK</button>
+      <button class="btn" onclick="applySettings('')">ON AIMBOT</button>
     </div>
     <div id="toast" class="toast"></div>
   </div>
